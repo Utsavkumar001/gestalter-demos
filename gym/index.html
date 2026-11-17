@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ironline Fitness – Gym demo site</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>:root{--hf:'Barlow Condensed';--page:#0B0B0F;--text:#F4F4F5;--muted:#A1A1AA;--card:#16161D;--border:#2A2A35;--hdr:#000000;--hdrtext:#FFFFFF;--accent:#A3E635;--acctext:#0B0B0F;--hero:#111118;--herotext:#FFFFFF;--herosub:#D4D4D8;--band:#14141B;--b2bg:#A3E635;--b2text:#0B0B0F;--link:#A3E635;--foot:#000000;--fab:#3F6212}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Inter',sans-serif;color:var(--text);background:var(--page);line-height:1.55}
+h1,h2,h3{font-family:var(--hf),sans-serif;margin:0;line-height:1.15}
+a{color:var(--link)}
+header{background:var(--hdr);color:var(--hdrtext);padding:14px 32px;display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:5}
+.brand{font-family:var(--hf),sans-serif;font-weight:700;font-size:22px;color:var(--hdrtext);text-decoration:none}
+.brand span{color:var(--accent)}
+nav{display:flex;flex-wrap:wrap;gap:4px 8px}
+nav a{color:var(--hdrtext);text-decoration:none;padding:12px 14px;border-radius:8px;font-size:15px}
+nav a.on,nav a:hover{background:rgba(255,255,255,.16)}
+.btn{display:inline-block;background:var(--accent);color:var(--acctext);font-weight:600;text-decoration:none;padding:14px 26px;border-radius:10px;border:0;font-size:16px;font-family:inherit;cursor:pointer}
+.btn.two{background:var(--b2bg);color:var(--b2text)}
+.btn.ghost{background:transparent;color:var(--herotext);border:1px solid var(--herotext)}
+.view{display:none}.view.on{display:block}
+.wrap{max-width:1100px;margin:0 auto;padding:64px 32px}
+.hero{background:var(--hero);color:var(--herotext)}
+.hero h1{font-size:52px;max-width:720px}
+.hero p{font-size:20px;color:var(--herosub);max-width:600px;margin:20px 0 28px}
+.row{display:flex;flex-wrap:wrap;gap:20px}
+.card{flex:1 1 250px;border:1px solid var(--border);border-radius:14px;padding:26px;background:var(--card)}
+.card h3{font-size:20px;margin-bottom:8px}
+.card p,.card li{margin:0;color:var(--muted);font-size:15px}
+.card ul{margin:10px 0 0;padding-left:20px}
+.price{font-family:var(--hf),sans-serif;font-size:28px;font-weight:700;margin:6px 0 10px}
+.tag{display:inline-block;background:var(--accent);color:var(--acctext);font-size:13px;font-weight:600;padding:4px 10px;border-radius:99px;margin-bottom:12px}
+h2{font-size:34px;margin-bottom:24px}
+.band{background:var(--band)}
+.ph{border:2px dashed var(--muted);border-radius:14px;padding:26px;color:var(--muted);flex:1 1 250px;font-size:15px}
+.lead{color:var(--muted);max-width:660px;margin:0 0 28px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:14px;border-bottom:1px solid var(--border)}
+th{background:var(--band)}
+.tw{overflow-x:auto}
+form{display:flex;flex-direction:column;gap:14px;max-width:460px}
+label{font-weight:600;font-size:14px}
+input,select{width:100%;padding:13px;border:1px solid var(--muted);border-radius:8px;font-size:16px;font-family:inherit;margin-top:6px;background:#fff;color:#0F172A}
+.ok{background:#DCFCE7;color:#14532D;padding:14px;border-radius:10px;display:none}
+.dish{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--border)}
+.dish b{font-weight:600}.dish small{display:block;color:var(--muted)}
+footer{background:var(--foot);color:#E2E8F0;padding:28px 32px;font-size:14px}
+.fab{position:fixed;right:18px;bottom:18px;background:var(--fab);color:#fff;font-weight:600;text-decoration:none;padding:14px 20px;border-radius:99px;box-shadow:0 4px 14px rgba(0,0,0,.35);z-index:6}
+@media(max-width:640px){.hero h1{font-size:36px}h2{font-size:28px}header{padding:12px 16px}.wrap{padding:44px 20px}}
+</style></head><body>
+<header><a class="brand" href="#home">Ironline <span>Fitness</span></a><nav aria-label="Main"><a href="#home" data-v="home">Home</a><a href="#plans" data-v="plans">Plans</a><a href="#trainers" data-v="trainers">Trainers</a><a href="#facilities" data-v="facilities">Facilities</a><a href="#trial" data-v="trial">Free trial</a></nav></header>
+<main><section id="v-home" class="view"><div class="hero"><div class="wrap"><h1>Train hard. Get stronger. Start this week.</h1><p>Strength, cardio and coaching under one roof. Book a free trial session and see the gym first.</p><a class="btn" href="#trial">Claim free trial</a> <a class="btn ghost" href="#plans" style="margin-left:8px">See plans</a></div></div><div class="wrap"><h2>Why train here</h2><div class="row"><div class="card"><h3>Coaching you can ask</h3><p>[Add your trainers and their certifications].</p></div><div class="card"><h3>Equipment that works</h3><p>[Add your equipment: free weights, machines, cardio].</p></div><div class="card"><h3>Timings that fit</h3><p>Early morning to late evening slots. [Confirm your hours].</p></div></div></div><div class="band"><div class="wrap"><h2>Try one session free</h2><p class="lead">Walk in, train, meet the trainers, then decide.</p><a class="btn two" href="#trial">Book free trial</a></div></div></section><section id="v-plans" class="view"><div class="wrap"><h2>Membership plans</h2><p class="lead">Simple plans with no hidden charges. Replace the sample details with your real prices.</p><div class="row"><div class="card"><span class="tag">Monthly</span><div class="price">₹ [add]</div><ul><li>Gym floor access</li><li>Cardio zone</li><li>Locker</li></ul></div><div class="card"><span class="tag">Quarterly</span><div class="price">₹ [add]</div><ul><li>Everything in Monthly</li><li>Free fitness assessment</li><li>Diet guidance chat</li></ul></div><div class="card"><span class="tag">Annual</span><div class="price">₹ [add]</div><ul><li>Everything in Quarterly</li><li>Best value per month</li><li>[Add a bonus]</li></ul></div></div><p class="lead" style="margin-top:28px">Personal training is available as an add-on: [add price].</p></div></section><section id="v-trainers" class="view"><div class="wrap"><h2>Meet the trainers</h2><p class="lead">Use real photos, names and certifications, with each trainer's permission.</p><div class="row"><div class="ph">[Trainer photo, name, speciality, certification]</div><div class="ph">[Trainer photo, name, speciality, certification]</div><div class="ph">[Trainer photo, name, speciality, certification]</div></div></div></section><section id="v-facilities" class="view"><div class="wrap"><h2>Facilities and timings</h2><div class="row" style="margin-bottom:36px"><div class="card"><h3>Strength zone</h3><p>[Add details]</p></div><div class="card"><h3>Cardio zone</h3><p>[Add details]</p></div><div class="card"><h3>Group classes</h3><p>[Add classes, for example Zumba or yoga]</p></div><div class="card"><h3>Lockers and showers</h3><p>[Confirm what you offer]</p></div></div><h3 style="margin-bottom:14px">Timings</h3><div class="tw"><table><thead><tr><th>Slot</th><th>Days</th><th>Time</th></tr></thead><tbody><tr><td>Morning</td><td>Mon–Sat</td><td>[Add time]</td></tr><tr><td>Evening</td><td>Mon–Sat</td><td>[Add time]</td></tr><tr><td>Sunday</td><td>Sun</td><td>[Add time]</td></tr></tbody></table></div></div></section><section id="v-trial" class="view"><div class="wrap"><h2>Book your free trial</h2><form id="f" novalidate><div><label for="i0">Your name</label><input id="i0"></div><div><label for="i1">Phone number</label><input id="i1"></div><div><label for="i2">Your goal</label><select id="i2"><option>Weight loss</option><option>Muscle gain</option><option>General fitness</option></select></div><button class="btn two" type="submit">Book trial</button><div class="ok" id="ok" role="status">Demo only: on the real site this reaches the owner on WhatsApp or email.</div></form><p class="lead" style="margin-top:36px">[Add address, phone number and a Google Maps link]</p></div></section></main>
+<a class="fab" href="#trial">Free trial</a>
+<footer>Ironline Fitness is a fictional concept demo made by Gestalter Studio (gestalter.online).</footer>
+<script>
+(function(){
+  var views=["home", "plans", "trainers", "facilities", "trial"];
+  function show(){
+    var h=(location.hash||'#'+views[0]).slice(1);
+    if(views.indexOf(h)<0)h=views[0];
+    views.forEach(function(v){document.getElementById('v-'+v).classList.toggle('on',v===h)});
+    document.querySelectorAll('nav a').forEach(function(a){a.classList.toggle('on',a.dataset.v===h)});
+    window.scrollTo(0,0);
+  }
+  window.addEventListener('hashchange',show);show();
+  var f=document.getElementById('f');
+  if(f)f.addEventListener('submit',function(e){e.preventDefault();document.getElementById('ok').style.display='block'});
+})();
+</script></body></html>
